@@ -1,6 +1,5 @@
 # <strong>Cariin [WIP]</strong>
-## Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
-<br>
+### Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
 
 ## Instalasi
 ```bash
@@ -10,13 +9,13 @@ composer install
 npn run development
 ```
 
-## Konntribusi
+## Kontribusi
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-## <mark>Frontend</mark>
+## Frontend
 1. ### Tailwindcss
 
-## <mark>Backend</mark>
+## Backend
 1. ### Laravel
 
 
