@@ -21,7 +21,8 @@ class PassportAuthController extends Controller
         $user = User::create([
             'name' => $request->name,
             'email' => $request->email,
-            'password' => bcrypt($request->password)
+            'password' => bcrypt($request->password),
+            'role' => $request->role,
         ]);
 
         $token = $user->createToken('LaravelAuthApp')->accessToken;
@@ -45,5 +46,17 @@ class PassportAuthController extends Controller
         } else {
             return response()->json(['error' => 'Unauthorised'], 401);
         }
+    }
+
+    /**
+     * Logout Req
+     */
+    public function logout(Request $request)
+    {
+        $request->user()->token()->revoke();
+        
+        return response()->json([
+            'message' => 'Successfully logged out'
+        ]);
     }
 }

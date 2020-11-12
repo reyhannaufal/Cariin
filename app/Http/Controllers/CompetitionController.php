@@ -9,42 +9,42 @@ class CompetitionController extends Controller
 {
     public function index()
     {
-        $competitions = auth()->user()->competitions;
- 
+        $competitions = Competition::all();
+
         return response()->json([
             'success' => true,
             'data' => $competitions
         ]);
     }
- 
+
     public function show($id)
     {
-        $competitions = auth()->user()->competitions()->find($id);
- 
+        $competitions = Competition::find($id);
+
         if (!$competitions) {
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found '
             ], 400);
         }
- 
+
         return response()->json([
             'success' => true,
             'data' => $competitions->toArray()
         ], 400);
     }
- 
+
     public function store(Request $request)
     {
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required'
         ]);
- 
+
         $competitions = new Competition();
         $competitions->title = $request->title;
         $competitions->description = $request->description;
- 
+
         if (auth()->user()->competitions()->save($competitions)) {
             return response()->json([
                 'success' => true,
@@ -59,11 +59,11 @@ class CompetitionController extends Controller
         }
             
     }
- 
+
     public function update(Request $request, $id)
     {
-        $competitions = auth()->user()->competitions()->find($id);
- 
+        $competitions = Competition::find($id);
+
         if (!$competitions) {
             return response()->json([
                 'success' => false,
@@ -72,7 +72,7 @@ class CompetitionController extends Controller
         }
         
         $updated = $competitions->fill($request->all())->save();
- 
+
         if ($updated){ 
             return response()->json([
                 'success' => true
@@ -85,18 +85,18 @@ class CompetitionController extends Controller
             ], 500);
         }
     }
- 
+
     public function destroy($id)
     {
-        $competitions = auth()->user()->competitions()->find($id);
- 
+        $competitions = Competition::find($id);
+
         if (!$competitions) {
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found'
             ], 400);
         }
- 
+
         if ($competitions->delete()) {
             return response()->json([
                 'success' => true
