@@ -4,14 +4,17 @@
             <div class="col-md-8">
                 <div class="card">
                     <div class="card-header">Example Component</div>
-
                     <div class="card-body">
-                        I'm an example component.
+                        it's working sadas
                     </div>
                 </div>
             </div>
         </div>
+        <div id="counter">
+            Counter: {{ counter }}
+        </div>
     </div>
+    
 </template>
 
 <script>
