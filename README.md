@@ -1,25 +1,29 @@
-# <strong>Cariin [WIP]</strong>
+# Cariin [WIP]
 ### Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
-
-## Instalasi
+---
+### Instalasi:
 ```bash
 composer install
+php artisan generate key
+php artisan migrate:fresh (untuk clear & migrate database)
 ```
 ```bash
-npn run development
+yarn install && yarn dev
 ```
+### Untuk development Vue gunakan:
+```bash
+yarn watch
+cd resources/js (folder development Vue)
+```
+---
+## Tech Stack
+### Frontend
+1. Vue
+1. Tailwincss 
 
-## Kontribusi
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-## Frontend
-1. ### Tailwindcss
-
-## Backend
-
-1. ### Laravel
-=======
-1. ### Laravel
+### Backend
+1. Laravel
+2. Passport
 
 
 
