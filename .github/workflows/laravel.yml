@@ -1,11 +1,10 @@
-name: Laravel
+name: CI
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ rest-api-test ]
-
+    branches:
+      - main
+      - rest-api-test
 jobs:
   laravel-tests:
 
