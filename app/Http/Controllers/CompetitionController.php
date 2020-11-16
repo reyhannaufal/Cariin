@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Competition;
+use Storage;
 
 class CompetitionController extends Controller
 {
@@ -38,12 +39,17 @@ class CompetitionController extends Controller
     {
         $this->validate($request, [
             'title' => 'required',
-            'description' => 'required'
+            'description' => 'required',
+            'image' => 'required|image:jpeg,png,jpg,gif,svg',
         ]);
+
+        $image = $request->file('image');
+        $image_path = $image->store('competitions', 'public');
 
         $competitions = new Competition();
         $competitions->title = $request->title;
         $competitions->description = $request->description;
+        $competitions->imageURL = Storage::disk('public')->url($image_path);
 
         if (auth()->user()->competitions()->save($competitions)) {
             return response()->json([
