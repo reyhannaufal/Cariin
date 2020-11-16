@@ -18,6 +18,7 @@ class CreateCompetitionsTable extends Migration
             $table->unsignedBigInteger('user_id');
             $table->text('title');
             $table->longText('description');
+            $table->string('imageURL');
             $table->timestamps();
 
             $table->foreign('user_id')

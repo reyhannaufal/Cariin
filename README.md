@@ -25,5 +25,30 @@ cd resources/js (folder development Vue)
 1. Laravel
 2. Passport
 
-
-
+## API Documentation
+1. Register
+(Post) /api/register
+body: name, email, password, role
+2. Login
+(Post) /api/login
+body: email, password
+3. Logout
+(Post) /api/logout
+header: Authorization
+4. User Details
+(Post) /api/user/details
+header: Authorization
+5. Add Competition
+(Post) /api/competitions
+header: Authorization
+body: title, description, image
+6. List Competition
+(Get) /api/competitions
+header: Authorization
+7. Edit Competiton
+(Put) /api/competitions/{id}
+header: Authorization
+body: title, description
+8. Delete Competiton
+(Delete) /api/competitions/{id}
+header: Authorization
