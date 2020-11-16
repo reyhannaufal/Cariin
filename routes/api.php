@@ -26,7 +26,7 @@ Route::post('register', 'PassportAuthController@register');
 Route::post('login', 'PassportAuthController@login');
 
 Route::middleware('auth:api')->group(function () {
-    Route::post('details', 'PassportAuthController@details');
+    Route::post('/user/details', 'PassportAuthController@details');
     Route::post('logout', 'PassportAuthController@logout');
     Route::resource('competitions', 'CompetitionController')->middleware('admin');
 });
