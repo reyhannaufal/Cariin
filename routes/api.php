@@ -26,6 +26,12 @@ Route::post('register', 'PassportAuthController@register');
 Route::post('login', 'PassportAuthController@login');
 
 Route::middleware('auth:api')->group(function () {
+    Route::post('/user/details', 'PassportAuthController@details');
     Route::post('logout', 'PassportAuthController@logout');
-    Route::resource('competitions', 'CompetitionController');
+    Route::resource('competitions', 'CompetitionController')->middleware('admin');
+});
+
+Route::fallback(function(){
+    return response()->json([
+        'message' => 'Page Not Found'], 404);
 });
