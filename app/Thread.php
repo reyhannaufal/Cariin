@@ -5,11 +5,12 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use App\User;
 use App\Team;
+use App\Reply;
 
-class Competition extends Model
+class Thread extends Model
 {
     protected $fillable = [
-        'title', 'description',
+        'content',
     ];
 
     public function user()
@@ -17,8 +18,13 @@ class Competition extends Model
         return $this->belongsTo(User::class);
     }
 
-    public function teams()
+    public function team()
     {
-        return $this->hasMany(Team::class);
+        return $this->belongsTo(Team::class);
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
     }
 }

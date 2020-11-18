@@ -7,6 +7,9 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 use App\Competition;
+use App\Team;
+use App\Thread;
+use App\Reply;
 
 class User extends Authenticatable
 {
@@ -42,6 +45,21 @@ class User extends Authenticatable
     public function competitions()
     {
         return $this->hasMany(Competition::class);
+    }
+
+    public function teams()
+    {
+        return $this->hasMany(Team::class);
+    }
+
+    public function threads()
+    {
+        return $this->hasMany(Thread::class);
+    }
+
+    public function replies()
+    {
+        return $this->hasMany(Reply::class);
     }
 
 }
