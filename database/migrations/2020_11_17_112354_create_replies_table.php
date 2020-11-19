@@ -21,9 +21,9 @@ class CreateRepliesTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')
-            ->references('id')->on('users');
+            ->references('id')->on('users')->onDelete('cascade');
             $table->foreign('thread_id')
-            ->references('id')->on('threads'); 
+            ->references('id')->on('threads')->onDelete('cascade'); 
         });
     }
 

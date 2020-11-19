@@ -14,15 +14,15 @@ class CompetitionController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $competitions
+            'competitions' => $competitions
         ]);
     }
 
     public function show($id)
     {
-        $competitions = Competition::find($id);
+        $competition = Competition::find($id);
 
-        if (!$competitions) {
+        if (!$competition) {
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found '
@@ -31,7 +31,7 @@ class CompetitionController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $competitions->toArray()
+            'competition' => $competition->toArray()
         ], 400);
     }
 
@@ -40,21 +40,23 @@ class CompetitionController extends Controller
         $this->validate($request, [
             'title' => 'required',
             'description' => 'required',
+            'category_id' => 'required',
             'image' => 'required|image:jpeg,png,jpg,gif,svg',
         ]);
 
         $image = $request->file('image');
         $image_path = $image->store('competitions', 'public');
 
-        $competitions = new Competition();
-        $competitions->title = $request->title;
-        $competitions->description = $request->description;
-        $competitions->imageURL = Storage::disk('public')->url($image_path);
+        $competition = new Competition();
+        $competition->title = $request->title;
+        $competition->description = $request->description;
+        $competition->category_id = $request->category_id;
+        $competition->imageURL = Storage::disk('public')->url($image_path);
 
-        if (auth()->user()->competitions()->save($competitions)) {
+        if (auth()->user()->competitions()->save($competition)) {
             return response()->json([
                 'success' => true,
-                'data' => $competitions->toArray()
+                'competition' => $competition->toArray()
             ]);
         }
         else {
@@ -92,7 +94,7 @@ class CompetitionController extends Controller
         }
     }
 
-    public function destroy($id)
+    public function delete($id)
     {
         $competitions = Competition::find($id);
 

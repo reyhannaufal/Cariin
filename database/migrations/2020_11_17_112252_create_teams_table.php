@@ -22,9 +22,9 @@ class CreateTeamsTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')
-            ->references('id')->on('users');
+            ->references('id')->on('users')->onDelete('cascade');
             $table->foreign('competition_id')
-            ->references('id')->on('competitions');  
+            ->references('id')->on('competitions')->onDelete('cascade');  
         });
     }
 

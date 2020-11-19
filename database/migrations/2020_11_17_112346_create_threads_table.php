@@ -21,9 +21,9 @@ class CreateThreadsTable extends Migration
             $table->timestamps();
 
             $table->foreign('user_id')
-            ->references('id')->on('users');
+            ->references('id')->on('users')->onDelete('cascade');
             $table->foreign('team_id')
-            ->references('id')->on('teams');  
+            ->references('id')->on('teams')->onDelete('cascade');  
         });
     }
 

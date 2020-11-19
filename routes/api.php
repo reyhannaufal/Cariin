@@ -25,13 +25,28 @@ use Illuminate\Support\Facades\Route;
 Route::post('register', 'PassportAuthController@register');
 Route::post('login', 'PassportAuthController@login');
 
-Route::middleware('auth:api')->group(function () {
+Route::middleware('auth:api')->group(function() {
     Route::post('/user/details', 'PassportAuthController@details');
     Route::post('logout', 'PassportAuthController@logout');
-    Route::resource('competitions', 'CompetitionController')->middleware('admin');
+    Route::prefix('/competitions')->middleware(['admin',])->group(function() {
+        Route::get('/index', 'CompetitionController@index');
+        Route::get('/{id}', 'CompetitionController@show');
+        Route::post('/store', 'CompetitionController@store');
+        Route::put('/edit/{id}', 'CompetitionController@update');
+        Route::delete('/delete/{id}', 'CompetitionController@delete');
+    });
+
+    Route::prefix('/categories')->middleware(['admin',])->group(function() {
+        Route::get('/index', 'CategoryController@index');
+        Route::get('/{id}', 'CategoryController@show');
+        Route::post('/store', 'CategoryController@store');
+        Route::put('/edit/{id}', 'CategoryController@update');
+        Route::delete('/delete/{id}', 'CategoryController@delete');
+    });
+    // Route::resource('competitions', 'CompetitionController')->middleware('admin');
 });
 
-Route::fallback(function(){
+Route::fallback(function() {
     return response()->json([
         'message' => 'Page Not Found'], 404);
 });
