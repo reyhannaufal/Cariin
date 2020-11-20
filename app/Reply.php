@@ -9,7 +9,7 @@ use App\Thread;
 class Reply extends Model
 {
     protected $fillable = [
-        'content',
+        'content', 'thread_id',
     ];
 
     public function user()

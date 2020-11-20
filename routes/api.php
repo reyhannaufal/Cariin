@@ -28,6 +28,7 @@ Route::post('login', 'PassportAuthController@login');
 Route::middleware('auth:api')->group(function() {
     Route::post('/user/details', 'PassportAuthController@details');
     Route::post('logout', 'PassportAuthController@logout');
+    
     Route::prefix('/competitions')->middleware(['admin',])->group(function() {
         Route::get('/index', 'CompetitionController@index');
         Route::get('/{id}', 'CompetitionController@show');
@@ -50,6 +51,22 @@ Route::middleware('auth:api')->group(function() {
         Route::post('/store', 'TeamController@store');
         Route::put('/edit/{id}', 'TeamController@update');
         Route::delete('/delete/{id}', 'TeamController@delete');
+    });
+
+    Route::prefix('/threads')->group(function() {
+        Route::get('/index', 'ThreadController@index');
+        Route::get('/{id}', 'ThreadController@show');
+        Route::post('/store', 'ThreadController@store');
+        Route::put('/edit/{id}', 'ThreadController@update');
+        Route::delete('/delete/{id}', 'ThreadController@delete');
+    });
+
+    Route::prefix('/replies')->group(function() {
+        Route::get('/index', 'ReplyController@index');
+        Route::get('/{id}', 'ReplyController@show');
+        Route::post('/store', 'ReplyController@store');
+        Route::put('/edit/{id}', 'ReplyController@update');
+        Route::delete('/delete/{id}', 'ReplyController@delete');
     });
 
 

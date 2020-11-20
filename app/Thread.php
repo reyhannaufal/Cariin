@@ -10,7 +10,7 @@ use App\Reply;
 class Thread extends Model
 {
     protected $fillable = [
-        'content',
+        'content', 'team_id',
     ];
 
     public function user()
