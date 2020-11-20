@@ -10,7 +10,7 @@ use App\Thread;
 class Team extends Model
 {
     protected $fillable = [
-        'title', 'description',
+        'title', 'description', 'competition_id'
     ];
 
     public function user()

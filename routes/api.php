@@ -43,7 +43,16 @@ Route::middleware('auth:api')->group(function() {
         Route::put('/edit/{id}', 'CategoryController@update');
         Route::delete('/delete/{id}', 'CategoryController@delete');
     });
-    // Route::resource('competitions', 'CompetitionController')->middleware('admin');
+
+    Route::prefix('/teams')->group(function() {
+        Route::get('/index', 'TeamController@index');
+        Route::get('/{id}', 'TeamController@show');
+        Route::post('/store', 'TeamController@store');
+        Route::put('/edit/{id}', 'TeamController@update');
+        Route::delete('/delete/{id}', 'TeamController@delete');
+    });
+
+
 });
 
 Route::fallback(function() {
