@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 
 * {
     box-sizing: border-box;
@@ -30,12 +30,6 @@ html {
 
 body {
     margin: 0;
-}
-
-main {
-    display: flexbox;
-    background: yellow;
-    padding: 5rem;
 }
 
 .route-enter-from {
