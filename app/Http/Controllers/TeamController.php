@@ -24,14 +24,14 @@ class TeamController extends Controller
         if (!$team) {
             return response()->json([
                 'success' => false,
-                'message' => 'Team not found '
+                'message' => 'Team not found'
             ], 400);
         }
 
         return response()->json([
             'success' => true,
             'team' => $team->toArray()
-        ], 400);
+        ], 200);
     }
 
     public function store(Request $request)
@@ -109,5 +109,24 @@ class TeamController extends Controller
                 'message' => 'Team can not be deleted'
             ], 500);
         }
+    }
+
+    public function threadsById($id)
+    {
+        $team = Team::find($id);
+
+        if (!$team) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Team not found'
+            ], 400);
+        }
+
+        $threads = $team->threads()->get();
+
+        return response()->json([
+            'success' => true,
+            'threads' => $threads
+        ], 200);
     }
 }
