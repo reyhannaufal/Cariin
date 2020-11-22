@@ -31,7 +31,13 @@
 </template>
 
 <script>
-export default {};
+export default {
+    // computed: {
+    //     isLoggedIn() {
+    //         return this.$store.getters.isAuthenticated;
+    //     },
+    // },
+};
 </script>
 
 <style scoped>
