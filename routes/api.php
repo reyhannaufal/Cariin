@@ -22,32 +22,50 @@ use Illuminate\Support\Facades\Route;
 *
 */
 
-Route::post('register', 'PassportAuthController@register');
-Route::post('login', 'PassportAuthController@login');
+Route::post('register', 'UserController@register');
+Route::post('login', 'UserController@login');
 
 Route::middleware('auth:api')->group(function() {
-    Route::post('/user/details', 'PassportAuthController@details');
-    Route::post('logout', 'PassportAuthController@logout');
-    
-    Route::prefix('/competitions')->middleware(['admin',])->group(function() {
-        Route::get('/index', 'CompetitionController@index');
-        Route::get('/{id}', 'CompetitionController@show');
-        Route::post('/store', 'CompetitionController@store');
-        Route::put('/edit/{id}', 'CompetitionController@update');
-        Route::delete('/delete/{id}', 'CompetitionController@delete');
-    });
+    Route::post('logout', 'UserController@logout');
 
+    Route::prefix('/user')->group(function() {
+        Route::get('/details', 'UserController@details');
+        Route::get('/{id}/details', 'UserController@detailsById');
+        Route::get('/teams', 'UserController@showTeams');
+        Route::get('/{id}/teams', 'UserController@showTeamsById');
+        Route::get('/threads', 'UserController@showThreads');
+        Route::get('/{id}/threads', 'UserController@showThreadsById');
+    });
+    
     Route::prefix('/categories')->middleware(['admin',])->group(function() {
-        Route::get('/index', 'CategoryController@index');
-        Route::get('/{id}', 'CategoryController@show');
         Route::post('/store', 'CategoryController@store');
         Route::put('/edit/{id}', 'CategoryController@update');
         Route::delete('/delete/{id}', 'CategoryController@delete');
     });
 
+    Route::prefix('/categories')->group(function() {
+        Route::get('/index', 'CategoryController@index');
+        Route::get('/{id}', 'CategoryController@show');
+        Route::get('/{id}/competitions', 'CategoryController@competitionsById');
+    });
+
+    Route::prefix('/competitions')->middleware(['admin',])->group(function() {
+        Route::post('/store', 'CompetitionController@store');
+        Route::put('/edit/{id}', 'CompetitionController@update');
+        Route::delete('/delete/{id}', 'CompetitionController@delete');
+    });
+
+    Route::prefix('/competitions')->group(function() {
+        Route::get('/index', 'CompetitionController@index');
+        Route::get('/{id}', 'CompetitionController@show');
+        Route::get('/{id}/teams', 'CompetitionController@teamsById');
+    });
+
+
     Route::prefix('/teams')->group(function() {
         Route::get('/index', 'TeamController@index');
         Route::get('/{id}', 'TeamController@show');
+        Route::get('/{id}/threads', 'TeamController@threadsById');
         Route::post('/store', 'TeamController@store');
         Route::put('/edit/{id}', 'TeamController@update');
         Route::delete('/delete/{id}', 'TeamController@delete');
@@ -56,6 +74,7 @@ Route::middleware('auth:api')->group(function() {
     Route::prefix('/threads')->group(function() {
         Route::get('/index', 'ThreadController@index');
         Route::get('/{id}', 'ThreadController@show');
+        Route::get('/{id}/replies', 'ThreadController@repliesById');
         Route::post('/store', 'ThreadController@store');
         Route::put('/edit/{id}', 'ThreadController@update');
         Route::delete('/delete/{id}', 'ThreadController@delete');
@@ -72,7 +91,8 @@ Route::middleware('auth:api')->group(function() {
 
 });
 
-Route::fallback(function() {
+Route::any('{any}', function(){
     return response()->json([
-        'message' => 'Page Not Found'], 404);
-});
+        'message'   => 'Page Not Found',
+    ], 404);
+})->where('any', '.*');

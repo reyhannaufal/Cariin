@@ -25,14 +25,14 @@ class CompetitionController extends Controller
         if (!$competition) {
             return response()->json([
                 'success' => false,
-                'message' => 'Competition not found '
+                'message' => 'Competition not found'
             ], 400);
         }
 
         return response()->json([
             'success' => true,
             'competition' => $competition->toArray()
-        ], 400);
+        ], 200);
     }
 
     public function store(Request $request)
@@ -115,5 +115,24 @@ class CompetitionController extends Controller
                 'message' => 'Competition can not be deleted'
             ], 500);
         }
+    }
+
+    public function teamsById($id)
+    {
+        $competition = Competition::find($id);
+
+        if (!$competition) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Competition not found'
+            ], 400);
+        }
+
+        $teams = $competition->teams()->get();
+
+        return response()->json([
+            'success' => true,
+            'teams' => $teams
+        ], 200);
     }
 }

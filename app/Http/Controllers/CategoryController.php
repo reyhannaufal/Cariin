@@ -24,14 +24,14 @@ class CategoryController extends Controller
         if (!$category) {
             return response()->json([
                 'success' => false,
-                'message' => 'Category not found '
+                'message' => 'Category not found'
             ], 400);
         }
 
         return response()->json([
             'success' => true,
             'category' => $category->toArray()
-        ], 400);
+        ], 200);
     }
 
     public function store(Request $request)
@@ -105,5 +105,24 @@ class CategoryController extends Controller
                 'message' => 'Category can not be deleted'
             ], 500);
         }
+    }
+
+    public function competitionsById($id)
+    {
+        $category = Category::find($id);
+
+        if (!$category) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Category not found'
+            ], 400);
+        }
+
+        $competitions = $category->competitions()->get();
+
+        return response()->json([
+            'success' => true,
+            'competitions' => $competitions
+        ], 200);
     }
 }

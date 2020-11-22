@@ -24,14 +24,14 @@ class ThreadController extends Controller
         if (!$thread) {
             return response()->json([
                 'success' => false,
-                'message' => 'Thread not found '
+                'message' => 'Thread not found'
             ], 400);
         }
 
         return response()->json([
             'success' => true,
             'thread' => $thread->toArray()
-        ], 400);
+        ], 200);
     }
 
     public function store(Request $request)
@@ -107,5 +107,24 @@ class ThreadController extends Controller
                 'message' => 'Thread can not be deleted'
             ], 500);
         }
+    }
+
+    public function repliesById($id)
+    {
+        $thread = Thread::find($id);
+
+        if (!$thread) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Thread not found'
+            ], 400);
+        }
+
+        $replies = $thread->replies()->get();
+
+        return response()->json([
+            'success' => true,
+            'replies' => $replies
+        ], 200);
     }
 }

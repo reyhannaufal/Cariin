@@ -24,14 +24,14 @@ class ReplyController extends Controller
         if (!$reply) {
             return response()->json([
                 'success' => false,
-                'message' => 'Reply not found '
+                'message' => 'Reply not found'
             ], 400);
         }
 
         return response()->json([
             'success' => true,
             'reply' => $reply->toArray()
-        ], 400);
+        ], 200);
     }
 
     public function store(Request $request)
