@@ -7,15 +7,18 @@
             <div class="flex-2"></div>
             <div class="p-4">
                 <div>
-                    <h1 class="text-4xl">Cari lomba-lomba <br />kesukaanmu!</h1>
-                    <p class="mt-4">
+                    <h1 class="text-4xl">
+                        Cari lomba-lomba <br />
+                        <span class="underline"> kesukaanmu!</span>
+                    </h1>
+                    <p class="mt-5">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         <br />
                         Deleniti, doloremque! <br />Optio aut illum nostrum
                         corporis quis quibusdam cumque itaque? Exercitationem.
                     </p>
                     <div class="mt-4">
-                        <base-button>Lomba</base-button>
+                        <base-button type="button">Lomba</base-button>
                         <base-button>Tentang Kami</base-button>
                     </div>
                 </div>
@@ -23,9 +26,9 @@
         </div>
         <div class="flex secondary-color lg:mx-auto justify-center path-bg">
             <div class="flex-2 my-auto">
-                <div class="p-4">
-                    <div class="mt-10">
-                        <p>PLATFORM LOMBA NO 1</p>
+                <div class="p-10">
+                    <div class="m-4">
+                        <p class="sm:mt-5">PLATFORM LOMBA NO 1</p>
                         <h1 class="text-4xl">
                             Dimana Komunitas dan <br />
                             Peyelenggara Lomba <br />
@@ -46,9 +49,9 @@
                 <img src="./winner.svg" alt="" />
             </div>
         </div>
-        <div class="flex p-5 justify-center px-4">
-            <img src="./question.svg" alt="test" />
-            <h1 class="text-4xl my-auto">
+        <div class="flex p-5 justify-center px-4 mx-10">
+            <img src="./question.svg" alt="test" class="w-20 md:w-36" />
+            <h1 class="lg:text-3xl my-auto text-base ml-2">
                 Apa Pendapat <br />
                 Orang Tentang Cariin ?
             </h1>
@@ -156,13 +159,15 @@ export default {};
 .path-bg {
     clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);
 }
+
 .path-2-bg {
     clip-path: polygon(200%, 100% 0, 100% 100%, 0% 100%);
 }
-:root {
-  --main-bg-color: #cbf3f0;
-  --secondary-bg-color: #B1f2ed;
-  --third-bg-color: #ff9f1c;
-  --button-color: #2ec4b6;
+
+.underline {
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--third-bg-color);
+    text-decoration-thickness: 15px;
 }
 </style>

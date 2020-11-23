@@ -28743,13 +28743,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 ;
 var _hoisted_1 = {
-  "class": "flex p-10"
+  "class": "flex p-5 main-color"
 };
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "flex-1"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "text-3xl text-center"
+  "class": "text-xl text-center"
 }, "Cariin © 2020")], -1
 /* HOISTED */
 );
@@ -28833,14 +28833,14 @@ var _hoisted_13 = {
   "class": "nav__item"
 };
 
-var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Logout");
+var _hoisted_14 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Keluar");
 
 var _hoisted_15 = {
   key: 1,
-  "class": "nav__item"
+  "class": "btn-header"
 };
 
-var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Login");
+var _hoisted_16 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Masuk");
 
 (0,vue__WEBPACK_IMPORTED_MODULE_0__.popScopeId)();
 
@@ -28960,8 +28960,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 ;
+var _hoisted_1 = {
+  "class": "container main-color max-w-full max-h-full"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex p-5 flex-col my-auto"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "mx-auto text-3xl underline"
+}, "Tentang Kami"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-6 md:p-10 mt-6 mx-auto"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? ")])], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h1", null, "Hello from about us");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
 }
 
 /***/ }),
@@ -28983,8 +28997,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 ;
+var _hoisted_1 = {
+  "class": "container main-color max-w-full max-h-full"
+};
+
+var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex p-5 flex-col my-auto"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "mx-auto text-3xl underline"
+}, "Hubungi Kami"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-6 md:p-10 mt-6 mx-auto"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? ")])], -1
+/* HOISTED */
+);
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("h1", null, "Hello from contact us");
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
 }
 
 /***/ }),
@@ -29041,12 +29069,14 @@ var _hoisted_5 = {
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
   "class": "text-4xl"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Cari lomba-lomba "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("kesukaanmu!")], -1
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Cari lomba-lomba "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
+  "class": "underline"
+}, " kesukaanmu!")], -1
 /* HOISTED */
 );
 
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
-  "class": "mt-4"
+  "class": "mt-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Lorem ipsum dolor sit amet consectetur adipisicing elit. "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Deleniti, doloremque! "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Optio aut illum nostrum corporis quis quibusdam cumque itaque? Exercitationem. ")], -1
 /* HOISTED */
 );
@@ -29064,10 +29094,12 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
   "class": "flex-2 my-auto"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-4"
+  "class": "p-10"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "mt-10"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, "PLATFORM LOMBA NO 1"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
+  "class": "m-4"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "sm:mt-5"
+}, "PLATFORM LOMBA NO 1"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
   "class": "text-4xl"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Dimana Komunitas dan "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Peyelenggara Lomba "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Bertemu ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
   "class": "mt-4"
@@ -29081,12 +29113,13 @@ var _hoisted_11 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 );
 
 var _hoisted_12 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "flex p-5 justify-center px-4"
+  "class": "flex p-5 justify-center px-4 mx-10"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("img", {
   src: _question_svg__WEBPACK_IMPORTED_MODULE_3__.default,
-  alt: "test"
+  alt: "test",
+  "class": "w-20 md:w-36"
 }), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "text-4xl my-auto"
+  "class": "lg:text-3xl my-auto text-base ml-2"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Apa Pendapat "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Orang Tentang Cariin ? ")])], -1
 /* HOISTED */
 );
@@ -29156,7 +29189,9 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_base_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-button");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_button, null, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_button, {
+    type: "button"
+  }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
       return [_hoisted_9];
     }),
@@ -29224,7 +29259,7 @@ var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 );
 
 var _hoisted_6 = {
-  "class": "my-3"
+  "class": "my-5"
 };
 
 var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)("Login");
@@ -29775,7 +29810,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/* header {\r\n    width: 100%;\r\n    height: 5rem;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nheader a {\r\n    text-decoration: none;\r\n    color: #000000;\r\n    display: inline-block;\r\n    padding: 0.75rem 1.5rem;\r\n    border: 1px solid transparent;\r\n}\r\n\r\na:active,\r\na:hover,\r\na.router-link-active {\r\n    border: 1px solid #f391e3;\r\n}\r\n\r\nh1 {\r\n    margin: 0;\r\n}\r\n\r\nh1 a {\r\n    color: black;\r\n    margin: 0;\r\n}\r\n\r\nh1 a:hover,\r\nh1 a:active,\r\nh1 a.router-link-active {\r\n    border-color: transparent;\r\n}\r\n\r\nheader nav {\r\n    width: 90%;\r\n    margin: auto;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\nheader ul {\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nli {\r\n    margin: 0 0.5rem;\r\n} */\n.brand[data-v-12a31364] {\r\n    font-weight: bold;\r\n    font-size: 20px;\n}\n.site-header[data-v-12a31364] {\r\n    position: relative;\r\n    background-color: var(--main-bg-color);\r\n    padding: 1.3rem;\n}\n.site-header__wrapper[data-v-12a31364] {\r\n    padding-top: 1rem;\r\n    padding-bottom: 1rem;\n}\n@media (min-width: 600px) {\n.site-header__wrapper[data-v-12a31364] {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        padding-top: 0;\r\n        padding-bottom: 0;\n}\n}\n@media (min-width: 600px) {\n.nav__wrapper[data-v-12a31364] {\r\n        display: flex;\n}\n}\n@media (max-width: 599px) {\n.nav__wrapper[data-v-12a31364] {\r\n        position: absolute;\r\n        top: 100%;\r\n        right: 0;\r\n        left: 0;\r\n        z-index: -1;\r\n        background-color: var(--main-bg-color);\r\n        visibility: hidden;\r\n        opacity: 0;\r\n        transform: translateY(-100%);\r\n        transition: transform 0.3s ease-out, opacity 0.3s ease-out;\n}\n.nav__wrapper.active[data-v-12a31364] {\r\n        visibility: visible;\r\n        opacity: 1;\r\n        transform: translateY(0);\n}\n}\n.nav__item a[data-v-12a31364] {\r\n    display: block;\r\n    padding: 1rem 1rem;\n}\n.nav__toggle[data-v-12a31364] {\r\n    display: none;\n}\n@media (max-width: 599px) {\n.nav__toggle[data-v-12a31364] {\r\n        display: block;\r\n        position: absolute;\r\n        right: 1rem;\r\n        bottom: 40;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\r\n/* header {\r\n    width: 100%;\r\n    height: 5rem;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nheader a {\r\n    text-decoration: none;\r\n    color: #000000;\r\n    display: inline-block;\r\n    padding: 0.75rem 1.5rem;\r\n    border: 1px solid transparent;\r\n}\r\n\r\na:active,\r\na:hover,\r\na.router-link-active {\r\n    border: 1px solid #f391e3;\r\n}\r\n\r\nh1 {\r\n    margin: 0;\r\n}\r\n\r\nh1 a {\r\n    color: black;\r\n    margin: 0;\r\n}\r\n\r\nh1 a:hover,\r\nh1 a:active,\r\nh1 a.router-link-active {\r\n    border-color: transparent;\r\n}\r\n\r\nheader nav {\r\n    width: 90%;\r\n    margin: auto;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\nheader ul {\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nli {\r\n    margin: 0 0.5rem;\r\n} */\n.btn-header[data-v-12a31364] {\r\n    border-radius: 30px;\r\n    padding: 0.9rem 1rem;\r\n    background: var(--button-color);\r\n    display: inline-block;\n}\n.brand[data-v-12a31364] {\r\n    font-weight: bold;\r\n    font-size: 20px;\n}\n.site-header[data-v-12a31364] {\r\n    position: relative;\r\n    background-color: var(--main-bg-color);\r\n    padding: 1.3rem;\n}\n.site-header__wrapper[data-v-12a31364] {\r\n    padding-top: 1rem;\r\n    padding-bottom: 1rem;\n}\n@media (min-width: 600px) {\n.site-header__wrapper[data-v-12a31364] {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        padding-top: 0;\r\n        padding-bottom: 0;\n}\n}\n@media (min-width: 600px) {\n.nav__wrapper[data-v-12a31364] {\r\n        display: flex;\n}\n}\n@media (max-width: 599px) {\n.nav__wrapper[data-v-12a31364] {\r\n        position: absolute;\r\n        top: 100%;\r\n        right: 0;\r\n        left: 0;\r\n        z-index: -1;\r\n        background-color: var(--main-bg-color);\r\n        visibility: hidden;\r\n        opacity: 0;\r\n        transform: translateY(-100%);\r\n        transition: transform 0.3s ease-out, opacity 0.3s ease-out;\n}\n.nav__wrapper.active[data-v-12a31364] {\r\n        visibility: visible;\r\n        opacity: 1;\r\n        transform: translateY(0);\n}\n}\n.nav__item a[data-v-12a31364] {\r\n    display: block;\r\n    padding: 1rem 1rem;\n}\n.nav__toggle[data-v-12a31364] {\r\n    display: none;\n}\n@media (max-width: 599px) {\n.nav__toggle[data-v-12a31364] {\r\n        display: block;\r\n        position: absolute;\r\n        right: 1rem;\r\n        bottom: 40;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29831,7 +29866,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.path-bg {\r\n    -webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);\r\n            clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);\n}\n.path-2-bg {\r\n    -webkit-clip-path: polygon(200%, 100% 0, 100% 100%, 0% 100%);\r\n            clip-path: polygon(200%, 100% 0, 100% 100%, 0% 100%);\n}\n:root {\r\n  --main-bg-color: #cbf3f0;\r\n  --secondary-bg-color: #B1f2ed;\r\n  --third-bg-color: #ff9f1c;\r\n  --button-color: #2ec4b6;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.path-bg {\r\n    -webkit-clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);\r\n            clip-path: polygon(0 24%, 100% 0, 100% 100%, 0% 100%);\n}\n.path-2-bg {\r\n    -webkit-clip-path: polygon(200%, 100% 0, 100% 100%, 0% 100%);\r\n            clip-path: polygon(200%, 100% 0, 100% 100%, 0% 100%);\n}\n.underline {\r\n    -webkit-text-decoration-line: underline;\r\n            text-decoration-line: underline;\r\n    -webkit-text-decoration-style: solid;\r\n            text-decoration-style: solid;\r\n    -webkit-text-decoration-color: var(--third-bg-color);\r\n            text-decoration-color: var(--third-bg-color);\r\n    text-decoration-thickness: 15px;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

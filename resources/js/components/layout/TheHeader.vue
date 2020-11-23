@@ -19,10 +19,10 @@
                         <router-link to="/contact-us">Hubungi Kami</router-link>
                     </li>
                     <li v-if="isLoggedIn" class="nav__item">
-                        <base-button @click="logout">Logout</base-button>
+                        <base-button @click="logout">Keluar</base-button>
                     </li>
-                    <li v-else class="nav__item">
-                        <router-link to="/api/login">Login</router-link>
+                    <li v-else class="btn-header">
+                        <router-link to="/api/login">Masuk</router-link>
                     </li>
                 </ul>
             </nav>
@@ -98,6 +98,13 @@ header ul {
 li {
     margin: 0 0.5rem;
 } */
+
+.btn-header {
+    border-radius: 30px;
+    padding: 0.9rem 1rem;
+    background: var(--button-color);
+    display: inline-block;
+}
 
 .brand {
     font-weight: bold;

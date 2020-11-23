@@ -25,7 +25,7 @@
                         name="password"
                     />
                 </div>
-                <footer class="my-3">
+                <footer class="my-5">
                     <base-button>Login</base-button>
                     <base-button class="mt-3" to="/api/register" link="true"
                         >Register</base-button
