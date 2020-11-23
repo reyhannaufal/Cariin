@@ -59,6 +59,7 @@ Route::middleware('auth:api')->group(function() {
         Route::get('/index', 'CompetitionController@index');
         Route::get('/{id}', 'CompetitionController@show');
         Route::get('/{id}/teams', 'CompetitionController@teamsById');
+        Route::get('/search/{keyword}', 'CompetitionController@search');
     });
 
 

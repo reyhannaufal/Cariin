@@ -26,7 +26,7 @@ class CompetitionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found'
-            ], 400);
+            ], 404);
         }
 
         return response()->json([
@@ -76,7 +76,7 @@ class CompetitionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found'
-            ], 400);
+            ], 404);
         }
         
         $updated = $competitions->fill($request->all())->save();
@@ -102,7 +102,7 @@ class CompetitionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found'
-            ], 400);
+            ], 404);
         }
 
         if ($competitions->delete()) {
@@ -125,7 +125,7 @@ class CompetitionController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Competition not found'
-            ], 400);
+            ], 404);
         }
 
         $teams = $competition->teams()->get();
@@ -133,6 +133,24 @@ class CompetitionController extends Controller
         return response()->json([
             'success' => true,
             'teams' => $teams
+        ], 200);
+    }
+
+    public function search($keyword)
+    {
+        $competitions = Competition::where('title', 'like', '%'.$keyword.'%')
+                        ->orWhere('description', 'like','%'.$keyword.'%')->get();
+
+        if (count($competitions) == 0) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Competition not found'
+            ], 404);
+        }
+
+        return response()->json([
+            'success' => true,
+            'competitions' => $competitions
         ], 200);
     }
 }

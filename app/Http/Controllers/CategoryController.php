@@ -25,7 +25,7 @@ class CategoryController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found'
-            ], 400);
+            ], 404);
         }
 
         return response()->json([
@@ -66,7 +66,7 @@ class CategoryController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found'
-            ], 400);
+            ], 404);
         }
         
         $category->name = $request->name;
@@ -92,7 +92,7 @@ class CategoryController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found'
-            ], 400);
+            ], 404);
         }
 
         if ($category->delete()) {
@@ -115,7 +115,7 @@ class CategoryController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Category not found'
-            ], 400);
+            ], 404);
         }
 
         $competitions = $category->competitions()->get();

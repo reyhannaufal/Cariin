@@ -25,7 +25,7 @@ class ThreadController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Thread not found'
-            ], 400);
+            ], 404);
         }
 
         return response()->json([
@@ -68,7 +68,7 @@ class ThreadController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Thread not found'
-            ], 400);
+            ], 404);
         }
         
         $updated = $threads->fill($request->all())->save();
@@ -94,7 +94,7 @@ class ThreadController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Thread not found'
-            ], 400);
+            ], 404);
         }
 
         if ($threads->delete()) {
@@ -117,7 +117,7 @@ class ThreadController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Thread not found'
-            ], 400);
+            ], 404);
         }
 
         $replies = $thread->replies()->get();

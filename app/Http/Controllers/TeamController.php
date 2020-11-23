@@ -25,7 +25,7 @@ class TeamController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Team not found'
-            ], 400);
+            ], 404);
         }
 
         return response()->json([
@@ -70,7 +70,7 @@ class TeamController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Team not found'
-            ], 400);
+            ], 404);
         }
         
         $updated = $teams->fill($request->all())->save();
@@ -96,7 +96,7 @@ class TeamController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Team not found'
-            ], 400);
+            ], 404);
         }
 
         if ($teams->delete()) {
@@ -119,7 +119,7 @@ class TeamController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Team not found'
-            ], 400);
+            ], 404);
         }
 
         $threads = $team->threads()->get();

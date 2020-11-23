@@ -25,7 +25,7 @@ class ReplyController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Reply not found'
-            ], 400);
+            ], 404);
         }
 
         return response()->json([
@@ -68,7 +68,7 @@ class ReplyController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Reply not found'
-            ], 400);
+            ], 404);
         }
         
         $updated = $replies->fill($request->all())->save();
@@ -94,7 +94,7 @@ class ReplyController extends Controller
             return response()->json([
                 'success' => false,
                 'message' => 'Reply not found'
-            ], 400);
+            ], 404);
         }
 
         if ($replies->delete()) {
