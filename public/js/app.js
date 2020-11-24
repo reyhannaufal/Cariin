@@ -29890,6 +29890,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-register {\r\n    padding: 0.75
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 9:0-14 */
 /***/ ((module) => {
 
 "use strict";
@@ -30240,7 +30241,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
+<<<<<<< HEAD
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/home-pict.svg?2e024f6853cbf2de3ac4f33beda2b051");
+=======
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/computer.svg?ac57a467722b4499a6c98e758289c6bd");
+>>>>>>> 4fec350029a128c0a1ce5491b210990b78e0beef
 
 /***/ }),
 
@@ -30278,7 +30283,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/question.svg?4ef5655c09da00402de3c7e233c2f1fc");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/question.svg?a63f611df9f3b422e1f1733bc2cb741c");
 
 /***/ }),
 
@@ -30297,7 +30302,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/winner.svg?3ba8e1491aeb9d6b14ba8dece5a4e048");
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ("/images/winner.svg?8c5abae69cf97b018023c13128231500");
 
 /***/ }),
 
@@ -30323,6 +30328,7 @@ __webpack_require__.r(__webpack_exports__);
   \*****************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module */
+/*! CommonJS bailout: module.exports is used directly at 732:31-45 */
 /***/ ((module) => {
 
 /**
@@ -31253,6 +31259,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /*! unknown exports (runtime-defined) */
 /*! runtime requirements: module, __webpack_require__.nc, __webpack_require__.* */
+/*! CommonJS bailout: module.exports is used directly at 230:0-14 */
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
