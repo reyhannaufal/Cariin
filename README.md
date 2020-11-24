@@ -1,6 +1,6 @@
 # Cariin [WIP]
-### Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
----
+Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
+
 ### Instalasi:
 ```bash
 composer install
@@ -15,7 +15,7 @@ yarn install && yarn dev
 yarn watch
 cd resources/js (folder development Vue)
 ```
----
+
 ## Tech Stack
 ### Frontend
 1. Vue
