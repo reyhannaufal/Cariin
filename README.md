@@ -4,7 +4,7 @@
 
 Sebuah aplikasi web yang mengubungkan antara owner lomba dan para peserta yang mencari lomba.
 
-### Dibuat dengan Laravel dan Vue
+
 
 ## Instalasi:
 
