@@ -2,7 +2,13 @@
     <header class="site-header">
         <div class="wrapper site-header__wrapper">
             <h1>
-                <router-link to="/" class="text-3xl">Cariin</router-link>
+                <router-link to="/" class="text-3xl">
+                    <img
+                        src="../../pages/pict/logo.png"
+                        alt="logo"
+                        class="w-12"
+                    />
+                </router-link>
             </h1>
             <nav class="nav">
                 <button class="nav__toggle" aria-expanded="false" type="button">

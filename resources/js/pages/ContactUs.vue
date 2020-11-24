@@ -1,6 +1,6 @@
 <template>
     <div
-        class="relative flex justify-center min-h-screen main-color dark:bg-gray-900 sm:items-center sm:pt-0"
+        class="relative flex justify-center min-h-screen main-color dark:bg-gray-900 sm:items-center sm:pt-0 my-auto"
     >
         <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
             <div class="mt-2 overflow-hidden">
@@ -9,12 +9,12 @@
                         class="p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg"
                     >
                         <h1
-                            class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight"
+                            class="text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight underline"
                         >
                             Kontak Kami
                         </h1>
                         <p
-                            class="text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2"
+                            class="text-normal text-xl text-gray-600 dark:text-gray-400 mt-8 font-semibold"
                         >
                             hubungi kami untuk segala pertanyaan anda
                         </p>

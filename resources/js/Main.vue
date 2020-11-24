@@ -19,7 +19,7 @@ export default {
 </script>
 
 <style>
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap");
 
 * {
     box-sizing: border-box;
@@ -27,6 +27,7 @@ export default {
 
 html {
     font-family: "Montserrat", sans-serif;
+    font-weight: 800;
 }
 
 body {
