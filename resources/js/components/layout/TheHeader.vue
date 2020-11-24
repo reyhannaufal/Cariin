@@ -1,5 +1,5 @@
 <template>
-    <header class="site-header">
+    <!-- <header class="site-header">
         <div class="wrapper site-header__wrapper">
             <h1>
                 <router-link to="/" class="text-3xl">
@@ -11,7 +11,12 @@
                 </router-link>
             </h1>
             <nav class="nav">
-                <button class="nav__toggle" aria-expanded="false" type="button">
+                <button
+                    class="nav__toggle"
+                    aria-expanded="true"
+                    type="button"
+                    @click="handleClick"
+                >
                     MENU
                 </button>
                 <ul class="nav__wrapper">
@@ -33,16 +38,74 @@
                 </ul>
             </nav>
         </div>
-    </header>
+    </header> -->
+    <nav
+        class="relative flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg main-color"
+    >
+        <div
+            class="container px-4 mx-auto flex flex-wrap items-center justify-between"
+        >
+            <div
+                class="w-full relative flex justify-between lg:w-auto px-4 lg:static lg:block lg:justify-start"
+            >
+                <router-link to="/" class="text-3xl">
+                    <img
+                        src="../../pages/pict/logo.png"
+                        alt="logo"
+                        class="w-12"
+                    />
+                </router-link>
+                <button
+                    class="text-black cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button"
+                    v-on:click="toggleNavbar()"
+                >
+                    <img
+                        src="../../pages/pict/menu.svg"
+                        alt="logo"
+                        class="w-12"
+                    />
+                </button>
+            </div>
+            <div
+                v-bind:class="{ hidden: !showMenu, flex: showMenu }"
+                class="lg:flex lg:flex-grow items-center"
+            >
+                <ul class="flex flex-col lg:flex-row list-none ml-auto">
+                    <li class="nav__item">
+                        <router-link to="/competition">Lomba</router-link>
+                    </li>
+                    <li class="nav__item">
+                        <router-link to="/about-us">Tentang Kami</router-link>
+                    </li>
+                    <li class="nav__item">
+                        <router-link to="/contact-us">Hubungi Kami</router-link>
+                    </li>
+                    <li v-if="isLoggedIn" class="nav__item">
+                        <base-button @click="logout">Keluar</base-button>
+                    </li>
+                    <li v-else class="btn-header">
+                        <router-link to="/api/login">Masuk</router-link>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 </template>
 
 <script>
 export default {
-    // computed: {
-    //     isLoggedIn() {
-    //         return this.$store.getters.isAuthenticated;
-    //     },
-    // },
+    name: "pink-navbar",
+    data() {
+        return {
+            showMenu: false,
+        };
+    },
+    methods: {
+        toggleNavbar: function () {
+            this.showMenu = !this.showMenu;
+        },
+    },
 };
 </script>
 

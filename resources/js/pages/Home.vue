@@ -2,7 +2,11 @@
     <main id="app" class="container max-w-full main-color">
         <div class="flex main-color lg:mx-auto justify-center path-2-bg p-5">
             <div class="flex-1 lg:max-w-lg">
-                <img src="./pict/home-pict.svg" alt="" />
+                <img
+                    src="./pict/home-pict.svg"
+                    class="max-w md:w-screen sm:w-0"
+                    alt=""
+                />
             </div>
 
             <div class="p-4 flex-2 my-5">
@@ -71,10 +75,9 @@
                             “
                         </div>
                         <p class="text-sm text-gray-600 text-center px-5">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Nam obcaecati laudantium recusandae, debitis
-                            eum voluptatem ad, illo voluptatibus temporibus odio
-                            provident.
+                            Plotform ini sangat membantu saya dalam mencari
+                            lomba sesuai dengan apa yang saya inginkan dengat
+                            cepat, tepat dan mudah.
                         </p>
                         <div
                             class="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3"
@@ -106,10 +109,9 @@
                             “
                         </div>
                         <p class="text-sm text-gray-600 text-center px-5">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing
-                            elit. Nam obcaecati laudantium recusandae, debitis
-                            eum voluptatem ad, illo voluptatibus temporibus odio
-                            provident.
+                            Lomba-Lomba yang disediakan paltform ini sangat
+                            beragam dan berkualitas! Saya sebagai pengguna bisa
+                            dengan tenang mencari lomba yang saya inginkan.
                         </p>
                         <div
                             class="text-3xl text-indigo-500 text-right leading-tight h-3 -mt-3"

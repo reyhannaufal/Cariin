@@ -1,9 +1,12 @@
 /node_modules
 /public/hot
 /public/js/app.js
+/public/css/app.css
 /public/storage
 /storage/*.key
 /vendor
+/public
+.github
 .env
 .env.backup
 .phpunit.result.cache
