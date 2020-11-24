@@ -42,6 +42,7 @@ a {
     border-radius: 30px;
     margin-right: 0.5rem;
     display: inline-block;
+    color: #000;
 }
 
 a:hover,

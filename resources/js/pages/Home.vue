@@ -4,10 +4,10 @@
             <div class="flex-1 lg:max-w-lg">
                 <img src="./computer.svg" alt="" />
             </div>
-            <div class="flex-2"></div>
-            <div class="p-4">
-                <div>
-                    <h1 class="text-4xl">
+
+            <div class="p-4 flex-2 my-5">
+                <div class="my-5">
+                    <h1 class="text-4xl my-5">
                         Cari lomba-lomba <br />
                         <span class="underline"> kesukaanmu!</span>
                     </h1>

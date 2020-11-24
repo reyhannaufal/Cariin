@@ -28524,7 +28524,7 @@ __webpack_require__.r(__webpack_exports__);
 /*! namespace exports */
 /*! export default [provided] [no usage info] [missing usage info prevents renaming] */
 /*! other exports [not provided] [no usage info] */
-/*! runtime requirements: __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
+/*! runtime requirements: __webpack_require__, __webpack_exports__, __webpack_require__.r, __webpack_require__.d, __webpack_require__.* */
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -28532,7 +28532,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => __WEBPACK_DEFAULT_EXPORT__
 /* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({});
+/* harmony import */ var _components_ui_BaseButton_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/ui/BaseButton.vue */ "./resources/js/components/ui/BaseButton.vue");
+;
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {
+    BaseButton: _components_ui_BaseButton_vue__WEBPACK_IMPORTED_MODULE_0__.default
+  }
+});
 
 /***/ }),
 
@@ -28998,21 +29004,104 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm-bundler.js");
 ;
 var _hoisted_1 = {
-  "class": "container main-color max-w-full max-h-full"
+  "class": "relative flex justify-center min-h-screen main-color dark:bg-gray-900 sm:items-center sm:pt-0"
+};
+var _hoisted_2 = {
+  "class": "max-w-6xl mx-auto sm:px-6 lg:px-8"
+};
+var _hoisted_3 = {
+  "class": "mt-2 overflow-hidden"
+};
+var _hoisted_4 = {
+  "class": "grid grid-cols-1 md:grid-cols-2"
 };
 
-var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "flex p-5 flex-col my-auto"
+var _hoisted_5 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "p-6 mr-2 bg-gray-100 dark:bg-gray-800 sm:rounded-lg"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "mx-auto text-3xl underline"
-}, "Hubungi Kami"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "p-6 md:p-10 mt-6 mx-auto"
-}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", null, " Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptate sit laborum libero itaque molestiae quam maxime id consequuntur eveniet? ")])], -1
+  "class": "text-4xl sm:text-5xl text-gray-800 dark:text-white font-extrabold tracking-tight"
+}, " Kontak Kami "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("p", {
+  "class": "text-normal text-lg sm:text-2xl font-medium text-gray-600 dark:text-gray-400 mt-2"
+}, " hubungi kami untuk segala pertanyaan anda "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex items-center mt-8 text-gray-600 dark:text-gray-400"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  viewBox: "0 0 24 24",
+  "class": "w-8 h-8 text-gray-500"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  d: "M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+}), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  d: "M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "ml-4 text-md tracking-wide font-semibold w-40"
+}, " Kampus ITS Sukolilo, Surabaya 60111 ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex items-center mt-4 text-gray-600 dark:text-gray-400"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  viewBox: "0 0 24 24",
+  "class": "w-8 h-8 text-gray-500"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  d: "M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "ml-4 text-md tracking-wide font-semibold w-40"
+}, " +62 813-1628-6728 ")]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "flex items-center mt-2 text-gray-600 dark:text-gray-400"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("svg", {
+  fill: "none",
+  stroke: "currentColor",
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  viewBox: "0 0 24 24",
+  "class": "w-8 h-8 text-gray-500"
+}, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("path", {
+  "stroke-linecap": "round",
+  "stroke-linejoin": "round",
+  "stroke-width": "1.5",
+  d: "M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+})]), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
+  "class": "ml-4 text-md tracking-wide font-semibold w-40"
+}, " cariin@id ")])], -1
 /* HOISTED */
 );
 
+var _hoisted_6 = {
+  "class": "p-6 flex flex-col justify-center"
+};
+
+var _hoisted_7 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createStaticVNode)("<div class=\"flex flex-col\"><label for=\"name\" class=\"hidden\">Nama Lengkap</label><input type=\"name\" name=\"name\" id=\"name\" placeholder=\"Nama Lengkap\" class=\"w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none\"></div><div class=\"flex flex-col mt-2\"><label for=\"email\" class=\"hidden\">Email</label><input type=\"email\" name=\"email\" id=\"email\" placeholder=\"Email\" class=\"w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none\"></div><div class=\"flex flex-col mt-2\"><label for=\"tel\" class=\"hidden\">Nomer Telpon</label><input type=\"tel\" name=\"tel\" id=\"tel\" placeholder=\"Nomer Telpon\" class=\"w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none\"></div>", 3);
+
+var _hoisted_10 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Kirim ");
+
 function render(_ctx, _cache, $props, $setup, $data, $options) {
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [_hoisted_2]);
+  var _component_base_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-button");
+
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("div", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_3, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [_hoisted_5, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("form", _hoisted_6, [_hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_button, {
+    type: "submit",
+    "class": "md:w-32 font-bold py-3 px-6 rounded-lg mt-3 hover:bg-white transition ease-in-out duration-300"
+  }, {
+    "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
+      return [_hoisted_10];
+    }),
+    _: 1
+  })])])])])]);
 }
 
 /***/ }),
@@ -29057,18 +29146,15 @@ var _hoisted_3 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("
 /* HOISTED */
 );
 
-var _hoisted_4 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", {
-  "class": "flex-2"
-}, null, -1
-/* HOISTED */
-);
-
+var _hoisted_4 = {
+  "class": "p-4 flex-2 my-5"
+};
 var _hoisted_5 = {
-  "class": "p-4"
+  "class": "my-5"
 };
 
 var _hoisted_6 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("h1", {
-  "class": "text-4xl"
+  "class": "text-4xl my-5"
 }, [/*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createTextVNode)(" Cari lomba-lomba "), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("br"), /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("span", {
   "class": "underline"
 }, " kesukaanmu!")], -1
@@ -29189,7 +29275,7 @@ var _hoisted_13 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(
 function render(_ctx, _cache, $props, $setup, $data, $options) {
   var _component_base_button = (0,vue__WEBPACK_IMPORTED_MODULE_0__.resolveComponent)("base-button");
 
-  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, _hoisted_4, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", null, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_button, {
+  return (0,vue__WEBPACK_IMPORTED_MODULE_0__.openBlock)(), (0,vue__WEBPACK_IMPORTED_MODULE_0__.createBlock)("main", _hoisted_1, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_2, [_hoisted_3, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_4, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_5, [_hoisted_6, _hoisted_7, (0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)("div", _hoisted_8, [(0,vue__WEBPACK_IMPORTED_MODULE_0__.createVNode)(_component_base_button, {
     type: "button"
   }, {
     "default": (0,vue__WEBPACK_IMPORTED_MODULE_0__.withCtx)(function () {
@@ -29810,7 +29896,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\r\n/* header {\r\n    width: 100%;\r\n    height: 5rem;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nheader a {\r\n    text-decoration: none;\r\n    color: #000000;\r\n    display: inline-block;\r\n    padding: 0.75rem 1.5rem;\r\n    border: 1px solid transparent;\r\n}\r\n\r\na:active,\r\na:hover,\r\na.router-link-active {\r\n    border: 1px solid #f391e3;\r\n}\r\n\r\nh1 {\r\n    margin: 0;\r\n}\r\n\r\nh1 a {\r\n    color: black;\r\n    margin: 0;\r\n}\r\n\r\nh1 a:hover,\r\nh1 a:active,\r\nh1 a.router-link-active {\r\n    border-color: transparent;\r\n}\r\n\r\nheader nav {\r\n    width: 90%;\r\n    margin: auto;\r\n    display: flex;\r\n    justify-content: space-between;\r\n    align-items: center;\r\n}\r\n\r\nheader ul {\r\n    list-style: none;\r\n    margin: 0;\r\n    padding: 0;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\nli {\r\n    margin: 0 0.5rem;\r\n} */\n.btn-header[data-v-12a31364] {\r\n    border-radius: 30px;\r\n    padding: 0.9rem 1rem;\r\n    background: var(--button-color);\r\n    display: inline-block;\n}\n.brand[data-v-12a31364] {\r\n    font-weight: bold;\r\n    font-size: 20px;\n}\n.site-header[data-v-12a31364] {\r\n    position: relative;\r\n    background-color: var(--main-bg-color);\r\n    padding: 1.3rem;\n}\n.site-header__wrapper[data-v-12a31364] {\r\n    padding-top: 1rem;\r\n    padding-bottom: 1rem;\n}\n@media (min-width: 600px) {\n.site-header__wrapper[data-v-12a31364] {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        padding-top: 0;\r\n        padding-bottom: 0;\n}\n}\n@media (min-width: 600px) {\n.nav__wrapper[data-v-12a31364] {\r\n        display: flex;\n}\n}\n@media (max-width: 599px) {\n.nav__wrapper[data-v-12a31364] {\r\n        position: absolute;\r\n        top: 100%;\r\n        right: 0;\r\n        left: 0;\r\n        z-index: -1;\r\n        background-color: var(--main-bg-color);\r\n        visibility: hidden;\r\n        opacity: 0;\r\n        transform: translateY(-100%);\r\n        transition: transform 0.3s ease-out, opacity 0.3s ease-out;\n}\n.nav__wrapper.active[data-v-12a31364] {\r\n        visibility: visible;\r\n        opacity: 1;\r\n        transform: translateY(0);\n}\n}\n.nav__item a[data-v-12a31364] {\r\n    display: block;\r\n    padding: 1rem 1rem;\n}\n.nav__toggle[data-v-12a31364] {\r\n    display: none;\n}\n@media (max-width: 599px) {\n.nav__toggle[data-v-12a31364] {\r\n        display: block;\r\n        position: absolute;\r\n        right: 1rem;\r\n        bottom: 40;\n}\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.btn-header[data-v-12a31364] {\r\n    border-radius: 30px;\r\n    padding: 0.9rem 1rem;\r\n    background: #2ec4b6;\r\n    display: inline-block;\n}\n.brand[data-v-12a31364] {\r\n    font-weight: bold;\r\n    font-size: 20px;\n}\n.site-header[data-v-12a31364] {\r\n    position: relative;\r\n    background-color: var(--main-bg-color);\r\n    padding: 1.3rem;\n}\n.site-header__wrapper[data-v-12a31364] {\r\n    padding-top: 1rem;\r\n    padding-bottom: 1rem;\n}\n@media (min-width: 600px) {\n.site-header__wrapper[data-v-12a31364] {\r\n        display: flex;\r\n        justify-content: space-between;\r\n        align-items: center;\r\n        padding-top: 0;\r\n        padding-bottom: 0;\n}\n}\n@media (min-width: 600px) {\n.nav__wrapper[data-v-12a31364] {\r\n        display: flex;\n}\n}\n@media (max-width: 599px) {\n.nav__wrapper[data-v-12a31364] {\r\n        position: absolute;\r\n        top: 100%;\r\n        right: 0;\r\n        left: 0;\r\n        z-index: -1;\r\n        background-color: var(--main-bg-color);\r\n        visibility: hidden;\r\n        opacity: 0;\r\n        transform: translateY(-100%);\r\n        transition: transform 0.3s ease-out, opacity 0.3s ease-out;\n}\n.nav__wrapper.active[data-v-12a31364] {\r\n        visibility: visible;\r\n        opacity: 1;\r\n        transform: translateY(0);\n}\n}\n.nav__item a[data-v-12a31364] {\r\n    display: block;\r\n    padding: 1rem 1rem;\n}\n.nav__toggle[data-v-12a31364] {\r\n    display: none;\n}\n@media (max-width: 599px) {\n.nav__toggle[data-v-12a31364] {\r\n        display: block;\r\n        position: absolute;\r\n        right: 1rem;\r\n        bottom: 40;\n}\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -29838,7 +29924,7 @@ __webpack_require__.r(__webpack_exports__);
 ;
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\nbutton[data-v-41b130a3],\r\na[data-v-41b130a3] {\r\n    text-decoration: none;\r\n    padding: 0.75rem 1.5rem;\r\n    font: inherit;\r\n    background-color: #2ec4b6;\r\n    border: 1px solid #2ec4b6;\r\n    color: white;\r\n    cursor: pointer;\r\n    border-radius: 30px;\r\n    margin-right: 0.5rem;\r\n    display: inline-block;\n}\na[data-v-41b130a3]:hover,\r\na[data-v-41b130a3]:active,\r\nbutton[data-v-41b130a3]:hover,\r\nbutton[data-v-41b130a3]:active {\r\n    background-color: #270041;\r\n    border-color: #270041;\n}\n.flat[data-v-41b130a3] {\r\n    background-color: transparent;\r\n    color: #3a0061;\r\n    border: none;\n}\n.outline[data-v-41b130a3] {\r\n    background-color: transparent;\r\n    border-color: #270041;\r\n    color: #270041;\n}\n.flat[data-v-41b130a3]:hover,\r\n.flat[data-v-41b130a3]:active,\r\n.outline[data-v-41b130a3]:hover,\r\n.outline[data-v-41b130a3]:active {\r\n    background-color: #edd2ff;\n}\r\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\nbutton[data-v-41b130a3],\r\na[data-v-41b130a3] {\r\n    text-decoration: none;\r\n    padding: 0.75rem 1.5rem;\r\n    font: inherit;\r\n    background-color: #2ec4b6;\r\n    border: 1px solid #2ec4b6;\r\n    color: white;\r\n    cursor: pointer;\r\n    border-radius: 30px;\r\n    margin-right: 0.5rem;\r\n    display: inline-block;\r\n    color: #000;\n}\na[data-v-41b130a3]:hover,\r\na[data-v-41b130a3]:active,\r\nbutton[data-v-41b130a3]:hover,\r\nbutton[data-v-41b130a3]:active {\r\n    background-color: #270041;\r\n    border-color: #270041;\n}\n.flat[data-v-41b130a3] {\r\n    background-color: transparent;\r\n    color: #3a0061;\r\n    border: none;\n}\n.outline[data-v-41b130a3] {\r\n    background-color: transparent;\r\n    border-color: #270041;\r\n    color: #270041;\n}\n.flat[data-v-41b130a3]:hover,\r\n.flat[data-v-41b130a3]:active,\r\n.outline[data-v-41b130a3]:hover,\r\n.outline[data-v-41b130a3]:active {\r\n    background-color: #edd2ff;\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
